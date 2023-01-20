@@ -5,7 +5,7 @@ from django.db import models
 class Meter(models.Model):
     """Meter object model"""
     name = models.CharField(max_length=255)
-    code = models.CharField(max_length=16)
+    code = models.CharField(max_length=16, unique=True)
 
 
 class MeterMetrics(models.Model):
