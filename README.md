@@ -25,7 +25,7 @@ docker-compose build
 ```
 
 ```docker
-docker-compose run
+docker-compose up
 ```
 
 #
