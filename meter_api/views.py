@@ -1,3 +1,6 @@
+from django.shortcuts import render
+
+# Create your views here.
 from django.http import JsonResponse
 from django.db.models import Avg, Min, Max, Sum, Aggregate
 from rest_framework import viewsets, generics
@@ -6,7 +9,6 @@ from rest_framework.response import Response
 
 from meter_api import serializers
 from meter_api import models
-from rest_framework.decorators import action
 
 
 # Create your views here.

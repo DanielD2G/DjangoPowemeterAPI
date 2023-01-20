@@ -5,7 +5,6 @@ from meter_api import views
 router = DefaultRouter()
 router.register('meter', views.MeterViewset)
 router.register('metric', views.MeterMetricsViewset)
-#router.register('max/<str:code>', views.MaxMeasureViewset)
 
 urlpatterns = [
     path('', include(router.urls)),

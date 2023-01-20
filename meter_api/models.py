@@ -12,5 +12,4 @@ class MeterMetrics(models.Model):
     """Handling consumption metrics from the meter"""
     consumption_meter = models.ForeignKey(Meter, on_delete=models.CASCADE, related_name='consumption')
     received_date = models.DateTimeField(auto_now_add=True)
-    # Preferiría usar ArrayField del modulo postgres, pero ya que usamos SQLite usaré una solución que se adecue
     kwh_consumption = models.IntegerField()
